@@ -1,0 +1,291 @@
+html {
+    background: url(./images/old-paper.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #img-login,
+  #img-x
+   {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+  }
+  
+  #login-button{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba(3,3,3,.8);
+    overflow: hidden;
+    opacity: 0.4;
+    box-shadow: 10px 10px 30px #000;}
+  
+  /* Login container */
+  #container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 260px;
+    height: 180px;
+    border-radius: 5px;
+    background: rgba(3,3,3,0.25);
+    box-shadow: 1px 1px 50px #000;
+    display: none;
+  }
+  
+  .close-btn{
+    position: absolute;
+    cursor: pointer;
+    font-family: 'Open Sans Condensed', sans-serif;
+    line-height: 18px;
+    top: 3px;
+    right: 3px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 10px;
+    opacity: .2;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .close-btn:hover{
+    opacity: .5;
+  }
+  
+  /* Heading */
+
+  #sub-headline,
+  #main-headline{
+    font-family: 'Pirata One', cursive;
+    position: relative;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 40px;
+    color: rgba(3, 3, 3, 0.589);;
+    text-shadow: 3px 3px 10px #000;
+  }
+  #main-headline{
+    font-family: 'Pirata One', cursive;
+    padding: 50px;
+    font-size: 5rem;
+    font-weight: bold;
+    letter-spacing: 1.5rem;
+    color: rgba(3, 3, 3, 0.589);
+
+  }
+  
+  /* Inputs */
+  #btn-login,
+  #userName{
+    font-family: 'Pirata One', cursive;
+    text-decoration: none;
+    position: relative;
+    width: 80%;
+    display: block;
+    margin: 9px auto;
+    font-size: 20px;
+    color: rgba(3, 3, 3, 0.589);;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background: rgba(3,3,3,.1);
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  #userName:focus{
+    outline: none;
+    box-shadow: 3px 3px 10px #333;
+    background: rgba(3,3,3,.18);
+  }
+  
+  /* Placeholders */
+  ::-webkit-input-placeholder {
+    color: rgba(3, 3, 3, 0.589);  }
+  :-moz-placeholder { /* Firefox 18- */
+     color: red;  }
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: red;  }
+  :-ms-input-placeholder {  
+     color: #333;  }
+
+  
+  /* index-page */
+
+  #main-h-index{
+    font-family: 'Pirata One', cursive;
+    padding-top:10px;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1rem;
+    color: rgba(3, 3, 3, 0.589);
+  }
+
+  nav {
+    max-width: 960px;
+    mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+  
+  nav ul {
+    text-align: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    padding: 18px;
+    font-family: 'Pirata One', cursive;
+    text-transform:uppercase;
+    color: rgba(3, 3, 3, 0.589);
+    font-size: 22px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  nav ul li a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(0, 35, 122, 0.788);
+  }
+
+  /* forma-page */
+  
+#forma>div{
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  gap: 10px;
+  font-family: 'Pirata One', cursive;
+  font-size: 25px;
+}
+
+#pojam,
+#kategorija
+{ 
+  cursor: pointer;
+  font-family: 'Pirata One', cursive;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 22px;
+
+  
+}
+
+#inputSub{
+  cursor: pointer;
+  width: 100%;
+  font-family: 'Pirata One', cursive;
+  font-size: 22px;
+}
+
+
+#poruka{
+  padding-top: 20px;
+  text-align: center;
+  font-family: 'Pirata One', cursive;
+}
+
+
+/* Hall of Fame */
+
+.sub-h-hall{
+  font-family: 'Pirata One', cursive;
+  font-size: 40px;
+}
+
+#rezultat>li{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto auto auto;
+  font-family: 'Pirata One', cursive;
+  padding: 10px;
+  font-size: 25px;
+  gap: 1.5rem;
+}
+
+/* Igra */
+
+#main-index{
+  display: grid;
+  grid-template-columns: 20% auto auto;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+#div-slovo,
+#forma-igra
+{
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: 'Pirata One', cursive;
+  font-size: 40px;
+  margin: 10px;
+}
+
+#div-slovo{
+  text-align: center;
+}
+
+#btn-slovo{
+  font-family: 'Pirata One', cursive;
+  font-size: 25px;
+}
+
+#help-text{
+  font-family: 'Pirata One', cursive;
+  font-size: 15px;
+}
+
+#forma-igra{
+  text-align: center;
+  font-size: 25px;
+}
+
+#btn-stop{
+  font-family: 'Pirata One', cursive;
+  font-size: 25px;
+}

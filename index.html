@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>  
+    <h1 id="main-h-index">Zanimljiva geografija</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="./index.html">Igra</a>
+        </li>
+        <li>
+          <a href="./forma.html">Dodaj pojam</a>
+        </li>
+        <li>
+          <a href="./hall.html">Hall of Fame</a>
+        </li>
+        <li>
+          <a href="./login.html">Izloguj se</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-index">
+    <div id="div-slovo">
+      <h1 id="izabrano-slovo"></h1>
+      <p id="timer"></p>
+      <button id="btn-slovo">Izaberi slovo</button>
+      <p id=help-text>*klik na dugme da bi ste dobili slovo i pokenuli igru</p>
+    </div>
+    <div>
+        <form id="forma-igra">
+          <div>
+              <label for="drzava">Država: </label>
+              <input type="text" id="drzava">
+          </div>
+          <div>
+            <label for="grad">Grad: </label>
+            <input type="text" id="grad">
+          </div>
+          <div>
+            <label for="reka">Reka: </label>
+            <input type="text" id="reka">
+          </div>
+          <div>
+            <label for="planina">Planina: </label>
+            <input type="text" id="planina">
+          </div>
+          <div>
+            <label for="zivotinja">Životinja: </label>
+            <input type="text" id="zivotinja">
+          </div>
+          <div>
+            <label for="biljka">Biljka: </label>
+            <input type="text" id="biljka">
+          </div>
+          <div>
+            <label for="predmet">Predmet: </label>
+            <input type="text" id="predmet">
+          </div>
+          <div>
+              <input id="btn-stop" type="button" value="Stop">
+          </div>
+      </form>
+    </div>
+    <div id="komp-rezultat"></div>
+  </main>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js""></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCd2JXyw0kMza2oV-g7aWtKJOhIfNB_k7o",
+            authDomain: "zanimljiva-geografija-f2433.firebaseapp.com",
+            databaseURL: "https://zanimljiva-geografija-f2433.firebaseio.com",
+            projectId: "zanimljiva-geografija-f2433",
+            storageBucket: "zanimljiva-geografija-f2433.appspot.com",
+            messagingSenderId: "358806667658",
+            appId: "1:358806667658:web:272cf45c9a821c312c4873"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        let db = firebase.firestore();
+    </script>
+  <script src="./igra.js" type="module"></script>
+</body>
+</html>
